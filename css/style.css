@@ -1,0 +1,249 @@
+:root {
+  --primary-color: #ff900e;
+  --header-bg: rgba(255, 144, 14, 0.1);
+  --menu-text-color: #424242;
+  --footer-bg: #fff4e7;
+  --paragraph-text-color: #727272;
+  --black: #131313;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* --------------------common styles-----------------  */
+
+a {
+  text-decoration: none;
+  color: var(--menu-text-color);
+}
+
+li {
+  list-style: none;
+}
+p {
+  line-height: 25px;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: var(--primary-color);
+  border: 0;
+  padding: 20px 25px;
+  border-radius: 8px;
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.container {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+/*------------------- header style------------------------  */
+
+header {
+  background-color: var(--header-bg);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-items > ul {
+  display: flex;
+  gap: 70px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/*---------------------- banner styles-------------- */
+
+/* .banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+} */
+.banner-text {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  padding: 0 50px;
+}
+.banner-headline {
+  color: var(--black);
+  font-size: 5vw;
+  font-weight: 700;
+}
+.banner-description,
+.feature-description {
+  margin-top: 15px;
+}
+
+.banner-image > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* -------------quick-list-features styles------------  */
+
+.quick-list-features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feature-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.feature-text {
+  padding: 70px;
+}
+
+.feature-headline {
+  color: var(--menu-text-color);
+  font-size: 3vw;
+  font-weight: 500;
+}
+
+.feature-headline .headline-black-color {
+  color: var(--black);
+  font-weight: 700;
+}
+.feature-headline .headline-primary-color {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+/* features list text styles */
+.feature-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+.feature-text .features-items-headline {
+  font-size: 2.8vw;
+  font-weight: 600;
+  border-left: 5px solid var(--primary-color);
+  padding-left: 20px;
+}
+
+.features-items-description {
+  margin: 25px 0;
+}
+.feature-item-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.features p {
+  margin: 24px 0;
+}
+.features-card {
+  padding: 15px 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+}
+
+.feature-title {
+  margin: 10px 0;
+}
+
+.feature-image img {
+  object-fit: cover;
+}
+
+.floating-card-text {
+  background-color: var(--primary-color);
+  width: 342px;
+  height: 200px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  bottom: 30%;
+  left: 90%;
+}
+.floating-card-text > h1 {
+  font-size: 3vw;
+  font-weight: 700;
+}
+
+/* --------------fact section styles ----------------- */
+.fact-text{
+    width: 50%;
+}
+.fact-text > h1{
+    font-size: 45px;
+}
+.fact-text > p{
+    margin: 25px 0;
+}
+.fact-card-group{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    padding: 50px 0;
+
+}
+.fact-card{
+    height: 240px;
+    width: 240px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 0 var(--primary-color);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.fact-card:hover{
+    
+    border: 1px solid var(--primary-color);
+    color: #fff;
+box-shadow: inset 240px 0 0 0 var(--primary-color);
+    
+}
+
+/* box-shadow: inset 0 0 0 0 #54b3d6;
+color: #54b3d6;
+padding: 0 .25rem;
+margin: 0 -.25rem;
+transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+a:hover {
+color: #fff;
+box-shadow: inset 200px 0 0 0 #54b3d6;;
+} */
+
+
+
+.card-title{
+    font-size: 45px;
+    margin: 5px 0;
+}
+.card-text{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--menu-text-color);
+
+}
