@@ -71,6 +71,11 @@ header {
   justify-content: space-between;
 }
 
+.logo >h1 {
+  font-weight: 700;
+font-size: 45px
+}
+
 .nav-items > ul {
   display: flex;
   gap: 70px;
@@ -182,20 +187,25 @@ header {
 .feature-image img {
   object-fit: cover;
 }
-
-.floating-card-text {
+.feature{
+  position: relative;
+}
+ .feature .floating-card-text {
   background-color: var(--primary-color);
   width: 342px;
   height: 200px;
+  border-radius: 8px;
   padding: 22px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
-  position: relative;
- bottom: 200px;
- left: 40%;
+  position: absolute;
+ bottom: -5%;
+ left: 50%;
+ 
+ transform: translate(-50%, -50%);
 }
 .floating-card-text > h1 {
   font-size: 45px;
