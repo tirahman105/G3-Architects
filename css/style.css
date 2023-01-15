@@ -363,6 +363,10 @@ label{
     flex-direction: column;
     align-items: center;
   }
+  .logo >h1 {
+    
+  font-size: 30px
+  }
   .nav-items > ul {
   display: flex;
   flex-direction: column;
