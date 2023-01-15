@@ -476,7 +476,7 @@ label{
 
 }
 
-@media only screen and (min-width: 577px) and (max-width: 768px){
+@media only screen and (min-width: 577px) and (max-width: 992px){
 
   .container{
     padding: 30px 0;
@@ -551,4 +551,49 @@ label{
   width: 100%;
 }
 
+}
+
+
+@media only screen and (min-width: 993px) and (max-width: 1200px){
+  
+
+  /* header responsive */
+
+.nav{
+  padding: 20px 20px;
+}
+.logo >h1 {
+    
+  font-size: 25px
+  }
+ /* feature items section responsive */
+ .feature-section {
+  flex-direction: column;
+}
+/* fact section responsive  */
+.fact-text{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fact-card-group{
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  align-items: center;
+  /* flex-direction: column; */
+  gap: 10px;
+  margin: 10px 0;
+  padding: 5px 0;
+}
+/* sponsor section responsive */
+
+.sponsor-icon-group{
+  padding: 50px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+  align-items: center;
+  gap: 25px;
+}
 }
